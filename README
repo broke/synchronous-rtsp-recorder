@@ -1,0 +1,14 @@
+Introduction
+============
+This software is a proof of concept for synchronouse rtsp video source recording.
+Two different video sources are recorded simultaneously into a matroska
+container and synced to each other by the use of the NTP timestamp in the RTCP SR.
+Watching the recorded video with VLC media player opens up two windows showing
+both video streams in sync.
+Currently everything is hardcoded in software and the software itself is not
+well designed but this may change in the future.
+
+Dependencies
+------------
+This software depends on FFmpeg and is tested with the version can be found here:
+https://github.com/FFmpeg/FFmpeg Commit: b8255a4c7096ecddea68e12e067c7a9b2e14ed8d
